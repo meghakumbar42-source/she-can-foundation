@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>She Can Foundation — Empowering Women. Transforming Communities.</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: DM Sans + Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet"/>
+  <!-- Phosphor Icons (CDN) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3/src/index.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Center: Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#impact"   class="nav-link">Impact</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#contact"  class="nav-link">Volunteer</a></li>
+      </ul>
+
+      <!-- Right: Theme toggle + Join Us CTA -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="ph ph-sun" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn-joinus">Join Us</a>
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <!-- Floating background orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-container">
+      <!-- Left: Text -->
+      <div class="hero-text reveal">
+        <span class="hero-badge">🌸 Women · Education · Leadership</span>
+        <h1 class="hero-heading">
+          Empowering Women.<br/>
+          <em>Transforming</em> Communities.
+        </h1>
+        <p class="hero-tagline">
+          We bridge the gap through education, digital empowerment, and leadership programs — 
+          because every woman deserves the tools to rise, lead, and inspire.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class="ph ph-hand-heart"></i> Become a Volunteer
+          </a>
+          <a href="#about" class="btn btn-ghost">Learn More <i class="ph ph-arrow-right"></i></a>
+        </div>
+        <!-- Mini stats row -->
+        <div class="hero-mini-stats">
+          <div class="mini-stat">
+            <strong>5K+</strong><span>Women Empowered</span>
+          </div>
+          <div class="mini-stat">
+            <strong>50+</strong><span>Communities</span>
+          </div>
+          <div class="mini-stat">
+            <strong>300+</strong><span>Volunteers</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="hero-image reveal reveal-right">
+        <div class="image-wrapper">
+          <div class="image-badge image-badge-1">
+            <i class="ph ph-graduation-cap"></i> 120+ Workshops
+          </div>
+          <div class="image-badge image-badge-2">
+            <i class="ph ph-star"></i> 5000+ Lives Changed
+          </div>
+          <!-- Using an Unsplash image for women empowerment -->
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80"
+            alt="Women learning and collaborating together"
+            class="hero-img"
+            loading="eager"
+          />
+          <div class="image-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave divider -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">Our Mission</div>
+      <h2 class="section-title reveal">Who We Are &amp; What We Stand For</h2>
+      <p class="section-subtitle reveal">
+        She Can Foundation is a grassroots NGO committed to building a world where every woman and girl 
+        has equal access to education, opportunities, and the power to lead.
+      </p>
+
+      <div class="about-grid">
+        <!-- Card 1 -->
+        <div class="about-card reveal">
+          <div class="about-icon" style="--icon-color:#8b5cf6">
+            <i class="ph ph-books"></i>
+          </div>
+          <h3>Education Support</h3>
+          <p>Providing scholarships, learning kits, and mentorship to girls and young women who lack access to quality education.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="about-card reveal">
+          <div class="about-icon" style="--icon-color:#ec4899">
+            <i class="ph ph-crown-simple"></i>
+          </div>
+          <h3>Youth Leadership</h3>
+          <p>Training the next generation of female leaders through workshops, mentoring circles, and leadership bootcamps.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="about-card reveal">
+          <div class="about-icon" style="--icon-color:#3b82f6">
+            <i class="ph ph-device-mobile-camera"></i>
+          </div>
+          <h3>Digital Awareness</h3>
+          <p>Closing the digital divide by equipping women with tech skills, internet literacy, and access to online opportunities.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="about-card reveal">
+          <div class="about-icon" style="--icon-color:#10b981">
+            <i class="ph ph-users-three"></i>
+          </div>
+          <h3>Community Programs</h3>
+          <p>Running on-ground campaigns, health drives, and community support programs that uplift entire neighbourhoods.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="about-card reveal">
+          <div class="about-icon" style="--icon-color:#f59e0b">
+            <i class="ph ph-heart"></i>
+          </div>
+          <h3>Social Impact</h3>
+          <p>Partnering with local governments and global organisations to drive systemic change for women's rights and welfare.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="about-card reveal">
+          <div class="about-icon" style="--icon-color:#ef4444">
+            <i class="ph ph-globe-hemisphere-west"></i>
+          </div>
+          <h3>Global Awareness</h3>
+          <p>Raising voices globally through campaigns, storytelling, and advocacy that champions women empowerment at scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS / FEATURES SECTION ===== -->
+  <section class="programs section" id="programs">
+    <div class="programs-bg">
+      <div class="orb orb-prog-1"></div>
+      <div class="orb orb-prog-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-label reveal">Our Programs</div>
+      <h2 class="section-title reveal">Three Pillars of Change</h2>
+      <p class="section-subtitle reveal">Every initiative we run falls under one of our three core program areas, each designed to create lasting, measurable change.</p>
+
+      <div class="programs-grid">
+        <!-- Program Card 1 -->
+        <div class="program-card reveal">
+          <div class="program-icon-wrap">
+            <i class="ph ph-student"></i>
+          </div>
+          <h3>Education Support</h3>
+          <p>Helping girls and youth access quality learning opportunities through scholarships, study materials, online courses, and dedicated mentors who guide them every step of the way.</p>
+          <ul class="program-features">
+            <li><i class="ph ph-check-circle"></i> Scholarship programs</li>
+            <li><i class="ph ph-check-circle"></i> Free learning kits</li>
+            <li><i class="ph ph-check-circle"></i> Online mentorship</li>
+          </ul>
+          <a href="#contact" class="program-link">Join the Program <i class="ph ph-arrow-right"></i></a>
+        </div>
+
+        <!-- Program Card 2 — Featured -->
+        <div class="program-card program-card--featured reveal">
+          <div class="program-featured-badge">Most Impactful</div>
+          <div class="program-icon-wrap">
+            <i class="ph ph-laptop"></i>
+          </div>
+          <h3>Digital Awareness</h3>
+          <p>Promoting digital literacy and technology access so women can participate in the digital economy, learn new skills, and unlock global opportunities from their communities.</p>
+          <ul class="program-features">
+            <li><i class="ph ph-check-circle"></i> Tech skills bootcamps</li>
+            <li><i class="ph ph-check-circle"></i> Internet safety training</li>
+            <li><i class="ph ph-check-circle"></i> Device access drives</li>
+          </ul>
+          <a href="#contact" class="program-link">Join the Program <i class="ph ph-arrow-right"></i></a>
+        </div>
+
+        <!-- Program Card 3 -->
+        <div class="program-card reveal">
+          <div class="program-icon-wrap">
+            <i class="ph ph-megaphone"></i>
+          </div>
+          <h3>Community Programs</h3>
+          <p>Organising workshops, awareness campaigns, health drives, and empowerment initiatives that bring communities together and create powerful support networks for women.</p>
+          <ul class="program-features">
+            <li><i class="ph ph-check-circle"></i> Monthly workshops</li>
+            <li><i class="ph ph-check-circle"></i> Health & wellness drives</li>
+            <li><i class="ph ph-check-circle"></i> Leadership summits</li>
+          </ul>
+          <a href="#contact" class="program-link">Join the Program <i class="ph ph-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="gallery section">
+    <div class="container">
+      <div class="section-label reveal">In the Field</div>
+      <h2 class="section-title reveal">Stories in Every Frame</h2>
+      <p class="section-subtitle reveal">Real moments. Real women. Real change happening on the ground every day.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large reveal">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&q=80" alt="Women in a leadership workshop" loading="lazy"/>
+          <div class="gallery-overlay"><span>Leadership Workshop</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80" alt="Girls learning together" loading="lazy"/>
+          <div class="gallery-overlay"><span>Girls Education Drive</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=500&q=80" alt="Women digital training" loading="lazy"/>
+          <div class="gallery-overlay"><span>Digital Skills Training</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1607748851687-ba9a10438621?w=500&q=80" alt="Community support program" loading="lazy"/>
+          <div class="gallery-overlay"><span>Community Support</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1547489432-cf93fa6c71ee?w=500&q=80" alt="NGO volunteering" loading="lazy"/>
+          <div class="gallery-overlay"><span>Volunteer Network</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats section" id="impact">
+    <div class="stats-bg">
+      <div class="orb orb-stats"></div>
+    </div>
+    <div class="container">
+      <div class="section-label reveal" style="color:var(--accent-light)">Our Impact</div>
+      <h2 class="section-title reveal" style="color:#fff">Numbers That Speak Louder Than Words</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal" data-target="5000" data-suffix="+">
+          <div class="stat-icon"><i class="ph ph-woman"></i></div>
+          <div class="stat-number"><span class="counter" data-target="5000">0</span>+</div>
+          <div class="stat-label">Women Empowered</div>
+        </div>
+        <div class="stat-card reveal" data-target="120" data-suffix="+">
+          <div class="stat-icon"><i class="ph ph-chalkboard-teacher"></i></div>
+          <div class="stat-number"><span class="counter" data-target="120">0</span>+</div>
+          <div class="stat-label">Workshops Conducted</div>
+        </div>
+        <div class="stat-card reveal" data-target="50" data-suffix="+">
+          <div class="stat-icon"><i class="ph ph-map-pin"></i></div>
+          <div class="stat-number"><span class="counter" data-target="50">0</span>+</div>
+          <div class="stat-label">Communities Reached</div>
+        </div>
+        <div class="stat-card reveal" data-target="300" data-suffix="+">
+          <div class="stat-icon"><i class="ph ph-handshake"></i></div>
+          <div class="stat-number"><span class="counter" data-target="300">0</span>+</div>
+          <div class="stat-label">Active Volunteers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-label reveal">Voices</div>
+      <h2 class="section-title reveal">What Women Are Saying</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>She Can Foundation gave me access to a computer for the first time. Today I run my own online business. This organisation literally changed my life.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">P</div>
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>Digital Skills Graduate, Pune</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>The leadership bootcamp showed me that my voice matters. I'm now leading a community group of 80 women in my village. I owe that confidence to this foundation.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:var(--pink)">A</div>
+            <div>
+              <strong>Amina Begum</strong>
+              <span>Community Leader, Hyderabad</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Thanks to the scholarship program, I completed my degree. I'm now a software engineer. She Can Foundation believed in me when I couldn't believe in myself.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:var(--blue)">R</div>
+            <div>
+              <strong>Riya Verma</strong>
+              <span>Software Engineer, Bengaluru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VOLUNTEER / CONTACT FORM ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Left: Info -->
+        <div class="contact-info reveal">
+          <div class="section-label">Join Us</div>
+          <h2 class="section-title" style="text-align:left">Become Part of the Movement</h2>
+          <p>Whether you want to volunteer, donate, partner, or simply spread the word — we'd love to hear from you. Together, we can do so much more.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="ph ph-envelope"></i>
+              <span>hello@shecantfoundation.org</span>
+            </div>
+            <div class="contact-detail-item">
+              <i class="ph ph-phone"></i>
+              <span>+91 98765 43210</span>
+            </div>
+            <div class="contact-detail-item">
+              <i class="ph ph-map-pin"></i>
+              <span>Mumbai, Maharashtra, India</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap reveal reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="role">I want to…</label>
+              <select id="role" name="role">
+                <option value="">Select an option</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="donate">Donate</option>
+                <option value="partner">Partner with us</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us a little about yourself and how you'd like to get involved…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="ph ph-paper-plane-tilt"></i> Send Message
+            </button>
+          </form>
+
+          <!-- Success Message (hidden by default) -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">🎉</div>
+            <h3>Thank you for reaching out!</h3>
+            <p>We've received your message and will get back to you within 48 hours. Welcome to the She Can family!</p>
+            <button class="btn btn-ghost" onclick="resetForm()">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C480,60 960,0 1440,30 L1440,0 L0,0 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" style="color:#fff">
+            <span class="logo-icon">✦</span>
+            She Can <span style="color:var(--accent-light)">Foundation</span>
+          </a>
+          <p>Empowering women. Transforming communities. Building a world where every woman can rise, lead, and thrive.</p>
+          <div class="social-links" style="margin-top:1rem">
+            <a href="#" class="social-link social-link--footer" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="social-link social-link--footer" aria-label="X"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="social-link social-link--footer" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="social-link social-link--footer" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="footer-col">
+          <h4>Our Programs</h4>
+          <ul>
+            <li><a href="#programs">Education Support</a></li>
+            <li><a href="#programs">Digital Awareness</a></li>
+            <li><a href="#programs">Community Programs</a></li>
+            <li><a href="#programs">Leadership Bootcamp</a></li>
+            <li><a href="#programs">Scholarship Fund</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><i class="ph ph-envelope"></i> hello@shecanfoundation.org</li>
+            <li><i class="ph ph-phone"></i> +91 98765 43210</li>
+            <li><i class="ph ph-map-pin"></i> Mumbai, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 She Can Foundation. All rights reserved. Built with <span style="color:var(--pink)">♥</span> for every woman who dares to dream.</p>
+        <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
