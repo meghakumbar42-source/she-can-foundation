@@ -6,9 +6,9 @@ A fully responsive single-page NGO website built for the **She Can Foundation Fr
 ---
 
 ## 🌐 Live Demo
-🔗 🔗 [View Live Website](https://meghakumbar42-source.github.io/she-can-foundation)
+🔗 🔗 [View Live Website](https://github.com/meghakumbar42-source/she-can-foundation/)
 
-> Replace `YOUR-USERNAME` with your GitHub username after deploying.
+
 
 ---
 
